@@ -1,0 +1,5 @@
+# exclusion des fichier temporaire
+*~
+*.RData
+*.Rhistory
+
