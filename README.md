@@ -17,10 +17,10 @@ install.packages("mgmtstp27_0.6.zip",repos=NULL)
 ```
 
 
-The sources are avalaible [here](https://code.google.com/p/mgmtstp27/source/browse/#git%2Ftrunk%2FRpackage).
+The sources are avalaible [here](https://github.com/badozor/mgmtstp27/tree/master/trunk/Rpackage).
 
 
-Additional documentation is avaialble [here](https://code.google.com/p/mgmtstp27/source/browse/#git%2Ftrunk%2FRdoc):
+Additional documentation is avaialble [here](https://github.com/badozor/mgmtstp27/tree/master/trunk/Rdoc):
   * Introduction to R package mgmtstp27 (version 0.1, in preparation, intromgmtstp27.pdf)
   * Effect of normalization on the prediction of DNA methylation status of MGMT promoter: example with HM-450K Infinium data from TCGA and the R package mgmtstp27 (version 0.1, in preparation, docmgmtstp27.pdf)
   * Prediction of the DNA methylation of MGMT with raw data (format IDAT) from HM-27k (version 0.1, in preparation, MgmtPredTCGA.pdf)
