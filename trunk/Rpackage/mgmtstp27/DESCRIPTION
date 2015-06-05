@@ -1,0 +1,11 @@
+Package: mgmtstp27
+Type: Package
+Title: DNA methylation of MGMT promoter
+Version: 0.6
+Date: 2015-01-14
+Author: Pierre Bady <pierre.bady@unil.ch>
+Maintainer: Pierre Bady <pierre.bady@unil.ch>
+Depends: R (>= 3.1.2), minfi, lumi, ade4,methylumi,MASS
+Suggests: boot
+Description: Prediction of the DNA methylation status of MGMT promoter with data from Infinium platforms (HM-27K and  HM450K)
+License: GPL (>= 2)
