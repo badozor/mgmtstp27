@@ -31,6 +31,8 @@ Additional documentation is avaialble [here](https://github.com/badozor/mgmtstp2
 
 ## Depends ##
 R (>= 3.1.2), minfi, lumi, ade4,methylumi,MASS
+
+
 R (>= 3.2.0), minfi, lumi, ade4,methylumi,MASS
 
 ## Suggests ##
@@ -47,6 +49,8 @@ GPL version 2 or newer
 
 ## Version ##
 alpha 0.6 (beta version for R-3.1.2)
+
+
 alpha 0.6-2 (beta version for R-3.2.0)
 
 ## URL ##
