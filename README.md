@@ -43,7 +43,7 @@ GPL version 2 or newer
 2014-09-11
 
 ## Revison ##
-2015-06-05
+2015-06-16
 
 ## Version ##
 alpha 0.6 (beta version for R-3.1.2)
