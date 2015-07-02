@@ -16,7 +16,10 @@ install.packages("mgmtstp27_0.6.tar.gz",repos=NULL)
 install.packages("mgmtstp27_0.6.zip",repos=NULL)
 ```
 
-The sources are avalaible [here](https://github.com/badozor/mgmtstp27/tree/master/trunk/Rpackage). The R function MGMTpredict directly provides prediction, classification and confidence intervals as illustrated below:
+The sources are avalaible [here](https://github.com/badozor/mgmtstp27/tree/master/trunk/Rpackage). 
+
+## Examples ##
+The R function MGMTpredict directly provides prediction, classification and confidence intervals as illustrated below:
 ```
 # loading R packages
 require(mgmtstp27)
@@ -34,8 +37,7 @@ par(mfrow=c(2,3))
 MGMTqc.pop(pred1,which.plot=1:3,mfrow=NULL)
 MGMTqc.single(pred1,nsample=1,which.plot=1:3,mfrow=NULL)
 ```
-
-Additional documentation is avaialble [here](https://github.com/badozor/mgmtstp27/tree/master/trunk/Rdoc):
+Additional documentations are avaialble [here](https://github.com/badozor/mgmtstp27/tree/master/trunk/Rdoc):
   * Introduction to R package mgmtstp27 (version 0.1, in preparation, intromgmtstp27.pdf)
   * Effect of normalization on the prediction of DNA methylation status of MGMT promoter: example with HM-450K Infinium data from TCGA and the R package mgmtstp27 (version 0.1, in preparation, docmgmtstp27.pdf)
   * Prediction of the DNA methylation of MGMT with raw data (format IDAT) from HM-27k (version 0.1, in preparation, MgmtPredTCGA.pdf)
