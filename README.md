@@ -16,9 +16,24 @@ install.packages("mgmtstp27_0.6.tar.gz",repos=NULL)
 install.packages("mgmtstp27_0.6.zip",repos=NULL)
 ```
 
-
-The sources are avalaible [here](https://github.com/badozor/mgmtstp27/tree/master/trunk/Rpackage).
-
+The sources are avalaible [here](https://github.com/badozor/mgmtstp27/tree/master/trunk/Rpackage). The R function MGMTpredict directly provides prediction, classification and confidence intervals as illustrated below:
+```
+# loading R packages
+require(mgmtstp27)
+require(minfiData)
+# preprocessing of the data
+dat <- preprocessRaw(RGsetEx)
+# computation of M-value
+mvalue <- log2((getMeth(dat)+1)/(getUnmeth(dat)+1))
+mvalue <- as.data.frame(t(mvalue))
+# predictions
+pred1 <- MGMTpredict(mvalue)
+head(pred1)
+# quality control graphics
+par(mfrow=c(2,3))
+MGMTqc.pop(pred1,which.plot=1:3,mfrow=NULL)
+MGMTqc.single(pred1,nsample=1,which.plot=1:3,mfrow=NULL)
+```
 
 Additional documentation is avaialble [here](https://github.com/badozor/mgmtstp27/tree/master/trunk/Rdoc):
   * Introduction to R package mgmtstp27 (version 0.1, in preparation, intromgmtstp27.pdf)
