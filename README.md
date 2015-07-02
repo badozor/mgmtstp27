@@ -18,7 +18,7 @@ install.packages("mgmtstp27_0.6.zip",repos=NULL)
 
 The sources are avalaible [here](https://github.com/badozor/mgmtstp27/tree/master/trunk/Rpackage). 
 
-## Examples ##
+## Example ##
 The R function MGMTpredict directly provides prediction, classification and confidence intervals as illustrated below:
 ```
 # loading R packages
