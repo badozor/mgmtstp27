@@ -4,9 +4,19 @@ Prediction of DNA methylation state of MGMT promoter based on HM-450K and HM-27K
 ## Description ##
 This R package contains function to compute the prediction of the DNA methylation of MGMT promoter with data from infinium HM-450K and HM-27K platforms
 
+## License ##
+GPL version 2 or newer
+```
+This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation; either version 2
+of the License, or (at your option) any later version.
 
-**NOTA:** This version is a beta version! as results, the R package mgmtstp27 is still in development and the documentation need some corrections (e.g. language, etc ...).
-
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+```
 
 ## Installation ##
 To install this package, load the archive containing the package mgmtstp27 (see below), start R and enter:
@@ -55,9 +65,6 @@ R (>= 3.2.0), minfi, lumi, ade4,methylumi,MASS
 ## Suggests ##
 boot
 
-## License ##
-GPL version 2 or newer
-
 ## Date ##
 2014-09-11
 
@@ -65,10 +72,10 @@ GPL version 2 or newer
 2015-06-16
 
 ## Version ##
-alpha 0.6 (beta version for R-3.1.2)
+alpha 0.6 (version for R-3.1.2)
 
 
-alpha 0.6-2 (beta version for R-3.2.0)
+alpha 0.6-2 (version for R-3.2.0)
 
 ## URL ##
   * http://lausanne.isb-sib.ch/~pbady/Rpackages.html
