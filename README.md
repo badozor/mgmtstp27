@@ -59,7 +59,7 @@ Additional documentations are avaialble [here](https://github.com/badozor/mgmtst
   * 
  
 
-## References related to the model MGMT-STP27 ##
+## A list of paper citing the model MGMT-STP27 ##
 last update: 2015-07-09 from pubmed
 
   * Wesseling P, van den Bent M, Perry A. Oligodendroglioma: pathology, molecular 
