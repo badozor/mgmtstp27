@@ -59,7 +59,7 @@ Additional documentations are avaialble [here](https://github.com/badozor/mgmtst
   * 
  
 
-## References related to the model [2015-07-09 from pubmed] ##
+## References related to the model MGMT-STP27 [2015-07-09 from pubmed] ##
 
   * Wesseling P, van den Bent M, Perry A. Oligodendroglioma: pathology, molecular 
 mechanisms and markers. Acta Neuropathol. 2015 Jun;129(6):809-27. doi:
@@ -217,7 +217,6 @@ Central PMCID: PMC3411674.
 ## Depends ##
 R (>= 3.1.2), minfi, lumi, ade4,methylumi,MASS
 
-
 R (>= 3.2.0), minfi, lumi, ade4,methylumi,MASS
 
 ## Suggests ##
@@ -230,10 +229,9 @@ boot
 2015-06-16
 
 ## Version ##
-alpha 0.6 (version for R-3.1.2)
+0.6 (version for R-3.1.2)
 
-
-alpha 0.6-2 (version for R-3.2.0)
+0.6-2 (version for R-3.2.0)
 
 ## URL ##
   * http://lausanne.isb-sib.ch/~pbady/Rpackages.html
