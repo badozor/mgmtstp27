@@ -56,7 +56,7 @@ Additional documentations are avaialble [here](https://github.com/badozor/mgmtst
 ## Unexhaustive References ##
   * Bady, P., D. Sciuscio, A.-C. Diserens, J. Bloch, M. J. van den Bent, C. Marosi, P.-Y. Dietrich, M. Weller, L. Mariani, F. L. Heppner, D. R. McDonald, D. Lacombe, R. Stupp, M. Delorenzi, and M. E. Hegi. (2012). MGMT methylation analysis of glioblastoma on the Infinium methylation BeadChip identifies two distinct CpG regions associated with gene silencing and outcome, yielding a prediction model for comparisons across datasets, tumor grades, and CIMP-status. Acta Neuropathologica 124:547-560. PubMed:http://www.ncbi.nlm.nih.gov/pubmed/22810491
   * van den Bent MJ, Erdem-Eraslan L, Idbaih A, de Rooi J, Eilers PHC, Spliet WGM, den Dunnen WFA, Tijssen C, Wesseling P, Sillevis Smitt PAEet al (2013) MGMT-STP27 Methylation Status as Predictive Marker for Response to PCV in Anaplastic Oligodendrogliomas and Oligoastrocytomas. A Report from EORTC Study 26951. Clinical Cancer Research 19: 5513-5522. PubMed: http://www.ncbi.nlm.nih.gov/pubmed/23948976
-  * 
+  * zzz
  
 
 ## A list of paper citing the model MGMT-STP27 ##
