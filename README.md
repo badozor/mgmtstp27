@@ -22,9 +22,11 @@ GNU General Public License for more details.
 To install this package, load the archive containing the package mgmtstp27 (see below), start R and enter:
 
 ```
-install.packages("mgmtstp27_0.6.tar.gz",repos=NULL)
-install.packages("mgmtstp27_0.6.zip",repos=NULL)
+install.packages("mgmtstp27_x.x-x.tar.gz",repos=NULL)
+install.packages("mgmtstp27_x.x-x.zip",repos=NULL)
 ```
+
+where x.x-x corresponds to the version of the package.
 
 The sources are avalaible [here](https://github.com/badozor/mgmtstp27/tree/master/trunk/Rpackage). 
 
