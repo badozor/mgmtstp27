@@ -30,6 +30,19 @@ where x.x-x corresponds to the version of the package.
 
 The sources are avalaible [here](https://github.com/badozor/mgmtstp27/tree/master/trunk/Rpackage). 
 
+
+The installation of the package mgmtstp27 requires the presence (or installation) of the following additional packages:
+```
+## CRAN
+install.packages(c("ade4","MASS"))
+
+## Bioconductor (https://www.bioconductor.org/install/)
+## try http:// if https:// URLs are not supported
+source("https://bioconductor.org/biocLite.R")
+biocLite(c("lumi","methylumi","minfi"))
+```
+
+
 ## Example ##
 The R function MGMTpredict directly provides prediction, classification and confidence intervals as illustrated below:
 ```
