@@ -1,6 +1,7 @@
 Package: mgmtstp27
 Type: Package
-Title: DNA methylation of MGMT promoter based on Infinium Platform (27k, 450K and EPIC) from Illumina
+Title: DNA methylation of MGMT promoter based on Infinium Platform
+        (27k, 450K and EPIC) from Illumina
 Version: 0.7
 Date: 2022-07-22
 Author: Pierre Bady <pierre.bady@unil.ch>
@@ -9,3 +10,4 @@ Depends: R (>= 4.2.1), minfi, lumi, ade4,methylumi,MASS
 Suggests: boot
 Description: This package contains R functions for the prediction of the DNA methylation status of MGMT promoter with data from Infinium platforms (HM-27K, HM450K and EPIC).
 License: GPL (>= 2)
+Built: R 4.2.1; ; 2022-07-22 19:38:55 UTC; windows

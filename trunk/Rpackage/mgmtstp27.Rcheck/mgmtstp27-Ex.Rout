@@ -1,0 +1,308 @@
+
+R version 4.2.1 (2022-06-23 ucrt) -- "Funny-Looking Kid"
+Copyright (C) 2022 The R Foundation for Statistical Computing
+Platform: x86_64-w64-mingw32/x64 (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> pkgname <- "mgmtstp27"
+> source(file.path(R.home("share"), "R", "examples-header.R"))
+> options(warn = 1)
+> options(pager = "console")
+> library('mgmtstp27')
+Loading required package: minfi
+Loading required package: BiocGenerics
+
+Attaching package: 'BiocGenerics'
+
+The following objects are masked from 'package:stats':
+
+    IQR, mad, sd, var, xtabs
+
+The following objects are masked from 'package:base':
+
+    Filter, Find, Map, Position, Reduce, anyDuplicated, append,
+    as.data.frame, basename, cbind, colnames, dirname, do.call,
+    duplicated, eval, evalq, get, grep, grepl, intersect, is.unsorted,
+    lapply, mapply, match, mget, order, paste, pmax, pmax.int, pmin,
+    pmin.int, rank, rbind, rownames, sapply, setdiff, sort, table,
+    tapply, union, unique, unsplit, which.max, which.min
+
+Loading required package: GenomicRanges
+Loading required package: stats4
+Loading required package: S4Vectors
+
+Attaching package: 'S4Vectors'
+
+The following objects are masked from 'package:base':
+
+    I, expand.grid, unname
+
+Loading required package: IRanges
+
+Attaching package: 'IRanges'
+
+The following object is masked from 'package:grDevices':
+
+    windows
+
+Loading required package: GenomeInfoDb
+Loading required package: SummarizedExperiment
+Loading required package: MatrixGenerics
+Loading required package: matrixStats
+
+Attaching package: 'MatrixGenerics'
+
+The following objects are masked from 'package:matrixStats':
+
+    colAlls, colAnyNAs, colAnys, colAvgsPerRowSet, colCollapse,
+    colCounts, colCummaxs, colCummins, colCumprods, colCumsums,
+    colDiffs, colIQRDiffs, colIQRs, colLogSumExps, colMadDiffs,
+    colMads, colMaxs, colMeans2, colMedians, colMins, colOrderStats,
+    colProds, colQuantiles, colRanges, colRanks, colSdDiffs, colSds,
+    colSums2, colTabulates, colVarDiffs, colVars, colWeightedMads,
+    colWeightedMeans, colWeightedMedians, colWeightedSds,
+    colWeightedVars, rowAlls, rowAnyNAs, rowAnys, rowAvgsPerColSet,
+    rowCollapse, rowCounts, rowCummaxs, rowCummins, rowCumprods,
+    rowCumsums, rowDiffs, rowIQRDiffs, rowIQRs, rowLogSumExps,
+    rowMadDiffs, rowMads, rowMaxs, rowMeans2, rowMedians, rowMins,
+    rowOrderStats, rowProds, rowQuantiles, rowRanges, rowRanks,
+    rowSdDiffs, rowSds, rowSums2, rowTabulates, rowVarDiffs, rowVars,
+    rowWeightedMads, rowWeightedMeans, rowWeightedMedians,
+    rowWeightedSds, rowWeightedVars
+
+Loading required package: Biobase
+Welcome to Bioconductor
+
+    Vignettes contain introductory material; view with
+    'browseVignettes()'. To cite Bioconductor, see
+    'citation("Biobase")', and for packages 'citation("pkgname")'.
+
+
+Attaching package: 'Biobase'
+
+The following object is masked from 'package:MatrixGenerics':
+
+    rowMedians
+
+The following objects are masked from 'package:matrixStats':
+
+    anyMissing, rowMedians
+
+Loading required package: Biostrings
+Loading required package: XVector
+
+Attaching package: 'Biostrings'
+
+The following object is masked from 'package:base':
+
+    strsplit
+
+Loading required package: bumphunter
+Loading required package: foreach
+Loading required package: iterators
+Loading required package: parallel
+Loading required package: locfit
+locfit 1.5-9.6 	 2022-07-11
+Setting options('download.file.method.GEOquery'='auto')
+Setting options('GEOquery.inmemory.gpl'=FALSE)
+Loading required package: lumi
+No methods found in package 'RSQLite' for request: 'dbListFields' when loading 'lumi'
+Loading required package: ade4
+
+Attaching package: 'ade4'
+
+The following object is masked from 'package:Biostrings':
+
+    score
+
+The following object is masked from 'package:GenomicRanges':
+
+    score
+
+The following object is masked from 'package:BiocGenerics':
+
+    score
+
+Loading required package: methylumi
+Loading required package: scales
+Loading required package: reshape2
+Loading required package: ggplot2
+Loading required package: FDb.InfiniumMethylation.hg19
+Loading required package: GenomicFeatures
+Loading required package: AnnotationDbi
+Loading required package: TxDb.Hsapiens.UCSC.hg19.knownGene
+Loading required package: org.Hs.eg.db
+
+
+Attaching package: 'methylumi'
+
+The following objects are masked from 'package:lumi':
+
+    estimateM, getHistory
+
+Loading required package: MASS
+
+Attaching package: 'MASS'
+
+The following object is masked from 'package:AnnotationDbi':
+
+    select
+
+Warning: replacing previous import 'lumi::getHistory' by 'methylumi::getHistory' when loading 'mgmtstp27'
+Warning: replacing previous import 'lumi::estimateM' by 'methylumi::estimateM' when loading 'mgmtstp27'
+> 
+> base::assign(".oldSearch", base::search(), pos = 'CheckExEnv')
+> base::assign(".old_wd", base::getwd(), pos = 'CheckExEnv')
+> cleanEx()
+> nameEx("MGMTSTP27")
+> ### * MGMTSTP27
+> 
+> flush(stderr()); flush(stdout())
+> 
+> ### Name: MGMTSTP27
+> ### Title: Model to predict MGMTSTP27
+> ### Aliases: MGMTSTP27
+> ### Keywords: datasets
+> 
+> ### ** Examples
+> 
+> data(MGMTSTP27)
+> MGMTSTP27
+
+Call:  glm(formula = y ~ cg12434587 + cg12981137, family = binomial, 
+    data = tmp)
+
+Coefficients:
+(Intercept)   cg12434587   cg12981137  
+     4.3215       0.5271       0.9265  
+
+Degrees of Freedom: 67 Total (i.e. Null);  65 Residual
+Null Deviance:	    94.03 
+Residual Deviance: 30.14 	AIC: 36.14
+> # maximization of good classification
+> MGMTSTP27$perf1
+        cut    sens      spec       pvp      pvn      prev
+1 0.3582476 0.96875 0.8888889 0.8857143 0.969697 0.4705882
+> # balance amon specificity and sensitivity
+> MGMTSTP27$perf2
+        cut    sens      spec     pvp       pvn      prev
+1 0.4054538 0.90625 0.9166667 0.90625 0.9166667 0.4705882
+> 
+> 
+> 
+> cleanEx()
+> nameEx("gbm")
+> ### * gbm
+> 
+> flush(stderr()); flush(stdout())
+> 
+> ### Name: gbm
+> ### Title: DNA methylation of MGMT promoter region from Infinium HM-450k
+> ###   and HM-27K platforms
+> ### Aliases: gbm NCHgbm450 TCGAgbm27
+> ### Keywords: datasets
+> 
+> ### ** Examples
+> 
+> # table S3 (bady et al 2012)
+> data(NCHgbm450)
+> head(NCHgbm450)
+     Code Age  Sex OS Status PrGBM TMZ_RT NTB PatientID MGMTmsp IDH1status CIMP
+1076 1076  NA <NA> NA   <NA>  <NA>   <NA> yes        NB       U       <NA> <NA>
+1297 1297  36    M 60   dead   yes    yes  no     P-206       M        mut  yes
+1308 1308  45    F 17   dead   yes    yes  no     P-209       M         wt   no
+1316 1316  68    M  9   dead    no     no  no     P-210       M         wt   no
+1317 1317  26    M 17   dead   yes    yes  no     P-216       U         wt   no
+1357 1357  36    M 28   dead   yes    yes  no     P-221       M        mut  yes
+     ExpressionSubtype Trial  STP27link STP27response STP27class cg00618725
+1076              <NA>  <NA> -1.3541449    0.20519355          U  -3.422297
+1297         Proneural    II  5.2499748    0.99477974          M   1.097324
+1308            Neural    II -0.5676182    0.36178658          M  -1.741160
+1316              <NA>    II -0.5829781    0.35824762          M  -3.178880
+1317       Mesenchymal    II -3.9271788    0.01931861          U  -2.768264
+1357         Proneural    II  3.8658949    0.97948549          M   1.434138
+     cg01341123 cg02022136 cg02330106 cg02802904 cg02941816 cg05068430
+1076  -1.243313  -2.306583  1.2576520  -6.083308 -1.9802932  -6.260079
+1297  -3.292762  -5.275700  0.3837486  -5.462675 -2.1437602  -5.053034
+1308  -1.553476  -2.258045  2.1592601  -5.547356  0.4515545  -5.056570
+1316  -3.009282  -4.061190  1.3143637  -5.298483 -1.9085699  -4.636367
+1317  -2.680349  -4.255895  1.3498265  -6.349866 -3.3916097  -4.540740
+1357   1.521176   1.741255  2.9821919  -0.773308  2.0145288  -4.627655
+     cg12434587 cg12575438 cg12981137 cg14194875 cg16215402 cg18026026
+1076 -4.7258459  2.9406394 -3.4374869 -3.5257869  -2.905424  -5.452360
+1297  0.8801676  0.6723771  0.5013628  0.9674217  -2.604399  -4.131637
+1308 -2.8832714  2.7801878 -3.6368459  0.1503638  -2.826422  -5.407175
+1316 -5.6446923  3.2577110 -2.0823342 -3.5946992  -2.880080  -5.417665
+1317 -5.5134785  2.3736290 -5.7666489 -3.8061406  -2.967308  -6.164778
+1357 -0.5507819  3.7289590 -0.1784560  1.4450450  -2.286086  -4.744554
+     cg19706602 cg23998405 cg25946389 cg26201213 cg26950715
+1076  -4.595452  -3.488498 -1.3153960  0.3780831  2.6723170
+1297  -3.554933  -8.371162 -3.1859031  0.1438742  0.2285859
+1308  -3.895061  -3.734608  0.3778683  1.1799064  2.3179269
+1316  -3.994994  -5.561344 -2.4138114  1.2650305  3.1000689
+1317  -3.690479  -5.416903 -2.2298325 -0.7856374  2.7592846
+1357  -4.247654   1.436775  1.9882962  2.2996091  2.9904467
+> # table S4 (bady et al 2012)
+> data(TCGAgbm27)
+> head(TCGAgbm27)
+             bcr_patient_barcode STP27response STP27class cg12434587 cg12981137
+TCGA-19-0964        TCGA-19-0964     0.9983304          M   1.623601  1.3127016
+TCGA-06-2565        TCGA-06-2565     0.9974861          M   1.120990  1.1559882
+TCGA-06-0877        TCGA-06-0877     0.9085053          M  -4.514769  0.3817951
+TCGA-02-0007        TCGA-02-0007     0.2789628          U  -3.414182 -3.7471048
+TCGA-02-0009        TCGA-02-0009     0.5385067          M  -2.928746 -2.8317146
+TCGA-02-0021        TCGA-02-0021     0.7546829          M  -2.962724 -1.7660180
+> 
+> 
+> 
+> cleanEx()
+> nameEx("mgmt")
+> ### * mgmt
+> 
+> flush(stderr()); flush(stdout())
+> 
+> ### Name: mgmt
+> ### Title: set of tools related to prediction of the DNA methylation of
+> ###   MGMT promoter.
+> ### Aliases: MGMTpredict MGMTsim MGMTqc MGMTqc.pop MGMTqc.single
+> ### Keywords: mgmt
+> 
+> ### ** Examples
+> 
+> data(MGMTSTP27)
+> training1 <- MGMTSTP27$data
+> pred1 <- MGMTpredict(training1)
+> sim1 <- MGMTsim(n=100,newdata=pred1) 
+> qqplot(pred1[,"cg12434587"],sim1[,"cg12434587"])
+> MGMTqc.pop(pred1)
+> 
+> 
+> 
+> ### * <FOOTER>
+> ###
+> cleanEx()
+> options(digits = 7L)
+> base::cat("Time elapsed: ", proc.time() - base::get("ptime", pos = 'CheckExEnv'),"\n")
+Time elapsed:  13.28 1.34 15.08 NA NA 
+> grDevices::dev.off()
+null device 
+          1 
+> ###
+> ### Local variables: ***
+> ### mode: outline-minor ***
+> ### outline-regexp: "\\(> \\)?### [*]+" ***
+> ### End: ***
+> quit('no')
