@@ -79,7 +79,8 @@ and 'cg12434587'. The function 'MGMTpredict' return data.frame contianing the fo
   \item{pred}{probability that MGMT promoter is methylated}
   \item{lower}{lower limit of the confidence intervals for the probability}
   \item{upper}{upper limit of the confidence intervals for the probability}
-  \item{state}{DNA methylation state of MGMT promoter using the cut-off provided in Bady et al. (2012)}  
+  \item{state}{DNA methylation state of MGMT promoter (U,M)using the cut-off provided in Bady et al. (2012)} 
+  \item{extended}{DNA methylation state of MGMT promoter (U,u,m,M) using the cut-off provided and confidence interval in Bady et al. (2012)}   
 }
 \references{
 Bady, P., D. Sciuscio, A.-C. Diserens, J. Bloch, M. J. van den Bent, C. Marosi, P.-Y. Dietrich, M. Weller, L. Mariani, 
@@ -97,6 +98,6 @@ training1 <- MGMTSTP27$data
 pred1 <- MGMTpredict(training1)
 sim1 <- MGMTsim(n=100,newdata=pred1) 
 qqplot(pred1[,"cg12434587"],sim1[,"cg12434587"])
-MGMTqc(pred1)
+MGMTqc.pop(pred1)
 }
 \keyword{mgmt}
