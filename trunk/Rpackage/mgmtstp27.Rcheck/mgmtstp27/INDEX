@@ -1,7 +1,0 @@
-MGMTSTP27               Model to predict MGMTSTP27
-MGMTpredict             set of tools related to prediction of the DNA
-                        methylation of MGMT promoter.
-gbm                     DNA methylation of MGMT promoter region from
-                        Infinium HM-450k and HM-27K platforms
-mgmtstp27-package       Additional tools for the analysis of
-                        methylation data
