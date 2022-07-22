@@ -75,6 +75,8 @@ R (>= 3.2.0), minfi, lumi, ade4,methylumi,MASS
 
 R (>= 3.2.2), minfi, lumi, ade4,methylumi,MASS
 
+R (>= 4.2.1), minfi, lumi, ade4,methylumi,MASS
+
 ## Suggests ##
 boot
 
