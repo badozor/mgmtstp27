@@ -1,8 +1,8 @@
 ## Title ##
-Prediction of DNA methylation state of MGMT promoter based on HM-450K and HM-27K infinium platforms
+Prediction of DNA methylation state of MGMT promoter based on infinium platforms (27K, 450K and EPIC)
 
 ## Description ##
-This R package contains function to compute the prediction of the DNA methylation of MGMT promoter with data from infinium HM-450K and HM-27K platforms
+This R package contains function to compute the prediction of the DNA methylation of MGMT promoter with data from infinium EPIC, HM-450K and HM-27K platforms
 
 ## License ##
 GPL version 2 or newer
