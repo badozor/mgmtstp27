@@ -104,6 +104,8 @@ boot
   * Bady, P., D. Sciuscio, A.-C. Diserens, J. Bloch, M. J. van den Bent, C. Marosi, P.-Y. Dietrich, M. Weller, L. Mariani, F. L. Heppner, D. R. McDonald, D. Lacombe, R. Stupp, M. Delorenzi, and M. E. Hegi. (2012). MGMT methylation analysis of glioblastoma on the Infinium methylation BeadChip identifies two distinct CpG regions associated with gene silencing and outcome, yielding a prediction model for comparisons across datasets, tumor grades, and CIMP-status. Acta Neuropathologica 124:547-560. PubMed:http://www.ncbi.nlm.nih.gov/pubmed/22810491
   * van den Bent MJ, Erdem-Eraslan L, Idbaih A, de Rooi J, Eilers PHC, Spliet WGM, den Dunnen WFA, Tijssen C, Wesseling P, Sillevis Smitt PAEet al (2013) MGMT-STP27 Methylation Status as Predictive Marker for Response to PCV in Anaplastic Oligodendrogliomas and Oligoastrocytomas. A Report from EORTC Study 26951. Clinical Cancer Research 19: 5513-5522. PubMed: http://www.ncbi.nlm.nih.gov/pubmed/23948976
   * Bady P., Delorenzi M., Hegi M. (accepted) Sensitivity analysis of the MGMT-STP27 model and impact of genetic/epigenetic context to predict the MGMT methylation status in gliomas and other tumors, Journal of Molecular Diagnostics, xx,xxxx-xxxx.PubMed: http://www.ncbi.nlm.nih.gov/pubmed/26927331
+  * Hench IB, Monica RD, Chiariotti L, Bihl M, Tolnay M, Frank S, Hench J (2021) Fast routine assessment of MGMT promoter methylation. Neurooncol Adv 3: vdaa170 Doi 10.1093/noajnl/vdaa170
+  * Tzaridis T, Schafer N, Weller J, Steinbach JP, Schlegel U, Seidel S, Sabel M, Hau P, Seidel C, Krex Det al (2021) MGMT promoter methylation analysis for allocating combined CCNU/TMZ chemotherapy: Lessons learned from the CeTeG/NOA-09 trial. Int J Cancer 148: 1695-1707 Doi 10.1002/ijc.3336
   * zzz
  
 
