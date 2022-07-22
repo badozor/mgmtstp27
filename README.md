@@ -91,6 +91,8 @@ boot
 
 0.6-3 (version for R-3.2.2)
 
+0.7 (version for R-4.2.1)
+
 ## URL ##
   * http://lausanne.isb-sib.ch/~pbady/Rpackages.html
   * http://www.chuv.ch/neurosciences/en/dnc-recherche-laboratoire_de_biologie_et_genetique_des_tumeurs_cerebrales.htm
