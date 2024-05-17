@@ -93,7 +93,8 @@ data(MGMTSTP27, envir=environment())
   invisible(match.call())
 }
 # IC => normal, see Faraway (2006)
-MGMTpredict <- function (x, level = 0.05, dispersion = FALSE, transpose = FALSE,ic.distrib="normal",cutoff=1,...){
+# update 2024
+MGMTpredict <- function (x, level = 0.05, dispersion = FALSE, transpose = FALSE,ic.distrib="normal",cutoff=1,isEpicV2=FALSE,...){
   if (!inherits(x, "data.frame"))
     stop("non convient object!")
   if(cutoff==1){
@@ -103,20 +104,36 @@ MGMTpredict <- function (x, level = 0.05, dispersion = FALSE, transpose = FALSE,
   }else{
     stop("non convenient cut-off!")
   }
-  if (!transpose) {
-    if (!is.element("cg12981137", colnames(x)))
-      stop("the probe 'cg12981137' is missing!")
-    if (!is.element("cg12434587", colnames(x)))
-      stop("the probe 'cg12434587' is missing!")
-    data1 <- as.data.frame(x[, c("cg12981137", "cg12434587")])
-  }
-  else {
-    if (!is.element("cg12981137", rownames(x)))
-      stop("the probe 'cg12981137' is missing!")
-    if (!is.element("cg12434587", rownames(x)))
-      stop("the probe 'cg12434587' is missing!")
-    data1 <- as.data.frame(t(x[c("cg12981137", "cg12434587"),
-    ]))
+  if(isEpicv2){
+    if (!transpose) {
+      if (!is.element("cg12981137_TC11", colnames(x)))
+        stop("the probe 'cg12981137_TC11' is missing!")
+      if (!is.element("cg12434587_BC11", colnames(x)))
+        stop("the probe 'cg12434587_BC11' is missing!")
+      data1 <- as.data.frame(x[, c("cg12981137_TC11", "cg12434587_BC11")])
+      
+    }else{
+      if (!is.element("cg12981137_TC11", rownames(x)))
+        stop("the probe 'cg12981137_TC11' is missing!")
+      if (!is.element("cg12434587_BC11", rownames(x)))
+        stop("the probe 'cg12434587_BC11' is missing!")
+      data1 <- as.data.frame(t(x[c("cg12981137_TC11", "cg12434587_BC11"),]))
+    }    
+  }else{
+    if (!transpose) {
+      if (!is.element("cg12981137", colnames(x)))
+        stop("the probe 'cg12981137' is missing!")
+      if (!is.element("cg12434587", colnames(x)))
+        stop("the probe 'cg12434587' is missing!")
+      data1 <- as.data.frame(x[, c("cg12981137", "cg12434587")])
+    }else {
+      if (!is.element("cg12981137", rownames(x)))
+        stop("the probe 'cg12981137' is missing!")
+      if (!is.element("cg12434587", rownames(x)))
+        stop("the probe 'cg12434587' is missing!")
+      data1 <- as.data.frame(t(x[c("cg12981137", "cg12434587"),
+      ]))
+    }
   }
   colnames(data1) <- c("cg12981137", "cg12434587")
   predmod <- predict(MGMTSTP27, newdata = data1, type = "link",

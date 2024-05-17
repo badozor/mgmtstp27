@@ -11,7 +11,7 @@ set of tools related to prediction of the DNA methylation of MGMT promoter.
 set of tools related to prediction of the DNA methylation of MGMT promoter.
 }
 \usage{
-MGMTpredict(x,level = 0.05,dispersion=FALSE,transpose=FALSE,ic.distrib="normal",cutoff=1,...)
+MGMTpredict(x,level = 0.05,dispersion=FALSE,transpose=FALSE,ic.distrib="normal",cutoff=1,isEpicV2=FALSE,...)
 MGMTsim(n=1000,proba=NULL,newdata=NULL,...)
 MGMTqc.pop(object,sim=FALSE,n=1000,which.plot=1:6,mfrow=c(3,3),...)
 MGMTqc.single(object,nsample=NULL,sim=FALSE,n=1000,which.plot=1:4,mfrow=c(2,3),...)
@@ -39,6 +39,9 @@ a character value indicating the probability distribution used to compute confid
   \item{cutt-off}{
 a numeric value identifying the cut-off used to calculate the DNA methylation state of MGMT promoter 
 (1= better classification, 2= balance among sensitivity and specificty). By default, cutoff is equal to 1.
+}
+  \item{isEpicV2}{
+a logical value (default is FASE). If DNA methylation comes from EPIC version 2 infinium platform, isEpicV2=TRUE.  
 }
   \item{n}{
 number of simulated samples
