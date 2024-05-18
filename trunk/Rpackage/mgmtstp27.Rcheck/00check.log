@@ -1,0 +1,169 @@
+* using log directory 'C:/scratch/development/GitHub/mgmtstp27/trunk/Rpackage/mgmtstp27.Rcheck'
+* using R version 4.4.0 (2024-04-24 ucrt)
+* using platform: x86_64-w64-mingw32
+* R was compiled by
+    gcc.exe (GCC) 13.2.0
+    GNU Fortran (GCC) 13.2.0
+* running under: Windows 10 x64 (build 19045)
+* using session charset: UTF-8
+* checking for file 'mgmtstp27/DESCRIPTION' ... OK
+* checking extension type ... Package
+* this is package 'mgmtstp27' version '0.8'
+* checking package namespace information ... OK
+* checking package dependencies ... OK
+* checking if this is a source package ... OK
+* checking if there is a namespace ... OK
+* checking for .dll and .exe files ... OK
+* checking for hidden files and directories ... OK
+* checking for portable file names ... OK
+* checking whether package 'mgmtstp27' can be installed ... OK
+* checking package directory ... OK
+* checking DESCRIPTION meta-information ... NOTE
+Checking should be performed on sources prepared by 'R CMD build'.
+* checking top-level files ... OK
+* checking for left-over files ... OK
+* checking index information ... OK
+* checking package subdirectories ... OK
+* checking code files for non-ASCII characters ... OK
+* checking R files for syntax errors ... OK
+* checking whether the package can be loaded ... OK
+* checking whether the package can be loaded with stated dependencies ... OK
+* checking whether the package can be unloaded cleanly ... OK
+* checking whether the namespace can be loaded with stated dependencies ... OK
+* checking whether the namespace can be unloaded cleanly ... OK
+* checking loading without being on the library search path ... OK
+* checking dependencies in R code ... OK
+* checking S3 generic/method consistency ... OK
+* checking replacement functions ... OK
+* checking foreign function calls ... OK
+* checking R code for possible problems ... NOTE
+.qqlinexy: no visible global function definition for 'quantile'
+.qqlinexy: no visible global function definition for 'abline'
+.sclass: no visible global function definition for 'par'
+.sclass: no visible global function definition for 'points'
+.sclass: no visible global function definition for 'box'
+.simprobe: no visible global function definition for 'rbinom'
+.simprobe: no visible global function definition for 'rgamma'
+MGMTpredict: no visible global function definition for 'predict'
+MGMTpredict: no visible global function definition for 'qt'
+MGMTpredict: no visible global function definition for 'qnorm'
+MGMTqc.pop: no visible global function definition for 'na.omit'
+MGMTqc.pop: no visible global function definition for 'par'
+MGMTqc.pop: no visible global function definition for 'grid'
+MGMTqc.pop: no visible global function definition for 'abline'
+MGMTqc.pop: no visible global function definition for 'contour'
+MGMTqc.pop: no visible global function definition for 'points'
+MGMTqc.pop: warning in .sclass(simdata, fac = simstate, cstar = 0,
+  add.p = TRUE, gbox = FALSE, col = c("blue", "red"), cpoint = 0,
+  clabel = 2): correspondance partielle d'argument de 'add.p' par
+  rapport à 'add.plot'
+MGMTqc.pop: no visible global function definition for 'title'
+MGMTqc.pop: no visible global function definition for 'lines'
+MGMTqc.pop: no visible global function definition for 'legend'
+MGMTqc.pop: no visible global function definition for 'box'
+MGMTqc.pop: no visible global function definition for 'polygon'
+MGMTqc.pop: no visible global function definition for 'axis'
+MGMTqc.pop: no visible global function definition for 'ks.test'
+MGMTqc.pop: no visible global function definition for 'qqplot'
+MGMTqc.pop: no visible global function definition for 'segments'
+MGMTqc.pop: no visible global function definition for 'lowess'
+MGMTqc.single: no visible global function definition for 'na.omit'
+MGMTqc.single: no visible global function definition for 'par'
+MGMTqc.single: no visible global function definition for 'grid'
+MGMTqc.single: no visible global function definition for 'abline'
+MGMTqc.single: no visible global function definition for 'contour'
+MGMTqc.single: no visible global function definition for 'points'
+MGMTqc.single: warning in .sclass(simdata, fac = simstate, cstar = 0,
+  add.p = TRUE, gbox = FALSE, col = c("blue", "red"), cpoint = 0,
+  clabel = 2): correspondance partielle d'argument de 'add.p' par
+  rapport à 'add.plot'
+MGMTqc.single: no visible global function definition for 'title'
+MGMTqc.single: no visible global function definition for 'lines'
+MGMTqc.single: no visible global function definition for 'legend'
+MGMTqc.single: no visible global function definition for 'box'
+MGMTqc.single: no visible global function definition for 'polygon'
+MGMTqc.single: no visible global function definition for 'segments'
+MGMTqc.single: no visible global function definition for 'axis'
+Undefined global functions or variables:
+  abline axis box contour grid ks.test legend lines lowess na.omit par
+  points polygon predict qnorm qqplot qt quantile rbinom rgamma
+  segments title
+Consider adding
+  importFrom("graphics", "abline", "axis", "box", "contour", "grid",
+             "legend", "lines", "par", "points", "polygon", "segments",
+             "title")
+  importFrom("stats", "ks.test", "lowess", "na.omit", "predict", "qnorm",
+             "qqplot", "qt", "quantile", "rbinom", "rgamma")
+to your NAMESPACE file.
+* checking Rd files ... NOTE
+prepare_Rd: MGMTSTP27.Rd:7-9: Dropping empty section \description
+* checking Rd metadata ... OK
+* checking Rd cross-references ... OK
+* checking for missing documentation entries ... OK
+* checking for code/documentation mismatches ... WARNING
+Data with usage in Rd file 'gbm.Rd' but not in code:
+  'gbm'
+
+Codoc mismatches from Rd file 'mgmt.Rd':
+MGMTsim
+  Code : function(n = 1000, newdata = NULL, maxIteration = 100, tol =
+                 0.001, method = "each", expd.grid = FALSE, ...)
+  Docs : function(n = 1000, proba = NULL, newdata = NULL, ...)
+  Noms d'arguments dans le code mais pas dans la doc :
+    maxIteration tol method expd.grid
+  Noms d'arguments dans la doc mais pas dans le code :
+    proba
+  Incohérence dans le nom des arguments :
+    Position: 2 Code: newdata Docs: proba
+    Position: 3 Code: maxIteration Docs: newdata
+    Position: 4 Code: tol Docs: ...
+MGMTqc.pop
+  Code : function(object, sim = FALSE, n = nrow(object), cutoff = 1,
+                 which.plot = 1:6, mfrow = c(3, 3), na.rm = TRUE, ...)
+  Docs : function(object, sim = FALSE, n = 1000, which.plot = 1:6,
+                 mfrow = c(3, 3), ...)
+  Noms d'arguments dans le code mais pas dans la doc :
+    cutoff na.rm
+  Incohérence dans le nom des arguments :
+    Position: 4 Code: cutoff Docs: which.plot
+    Position: 5 Code: which.plot Docs: mfrow
+    Position: 6 Code: mfrow Docs: ...
+  Incohérence dans les valeurs par défaut des arguments :
+    Name: 'n' Code: nrow(object) Docs: 1000
+MGMTqc.single
+  Code : function(object, nsample = NULL, sim = FALSE, n =
+                 nrow(object), cutoff = 1, which.plot = 1:4, mfrow =
+                 c(2, 3), na.rm = TRUE, ...)
+  Docs : function(object, nsample = NULL, sim = FALSE, n = 1000,
+                 which.plot = 1:4, mfrow = c(2, 3), ...)
+  Noms d'arguments dans le code mais pas dans la doc :
+    cutoff na.rm
+  Incohérence dans le nom des arguments :
+    Position: 5 Code: cutoff Docs: which.plot
+    Position: 6 Code: which.plot Docs: mfrow
+    Position: 7 Code: mfrow Docs: ...
+  Incohérence dans les valeurs par défaut des arguments :
+    Name: 'n' Code: nrow(object) Docs: 1000
+
+* checking Rd \usage sections ... WARNING
+Undocumented arguments in Rd file 'mgmt.Rd'
+  'cutoff' 'proba'
+Documented arguments not in \usage in Rd file 'mgmt.Rd':
+  'cutt-off'
+
+Functions with \usage entries need to have the appropriate \alias
+entries, and all their arguments documented.
+The \usage entries must correspond to syntactically valid R code.
+See chapter 'Writing R documentation files' in the 'Writing R
+Extensions' manual.
+* checking Rd contents ... NOTE
+Rd files without \description:
+  'MGMTSTP27.Rd'
+* checking for unstated dependencies in examples ... OK
+* checking contents of 'data' directory ... OK
+* checking data for non-ASCII characters ... OK
+* checking data for ASCII and uncompressed saves ... OK
+* checking examples ... OK
+* checking PDF version of manual ... OK
+* DONE
+Status: 2 WARNINGs, 4 NOTEs

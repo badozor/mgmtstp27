@@ -68,6 +68,54 @@ Additional documentations are avaialble [here](https://github.com/badozor/mgmtst
   * Prediction of the DNA methylation of MGMT with raw data (format IDAT) from HM-27k (version 0.1, in preparation, MgmtPredTCGA.pdf)
 
 
+## Note for EPIC v2 infinium platform (update 18/05/2024)
+
+For EPIC v2 infinium platform, the function uses the two probes "cg12434587_BC11" and "cg12981137_TC11" (which will be renamed as "cg12434587" and "cg12981137"). The selection of these two probes is based on the concordance of the annotation information and the sequences of the probes (see variable "AlleleA_ProbeSeq" from manifest file). The explanation is given below:
+
+
+```
+# import R packages
+require(mgmtstp27)
+coef(MGMTSTP27)
+probemodels <- names(coef(MGMTSTP27))[-1]
+
+# data source: https://zwdzwd.github.io/InfiniumAnnotation
+# manifest for EPIC v2
+annotepicv2 <- read.table("EPICv2.hg38.manifest.tsv",header=TRUE,sep="\t")
+dim(annotepicv2)
+head(annotepicv2)
+probenamesv2 <- annotepicv2$Probe_ID
+
+# manifest for EPIC
+annotepic <- read.table("EPIC.hg38.manifest.tsv",header=TRUE,sep="\t")
+dim(annotepic)
+head(annotepic)
+probenames <- annotepic$Probe_ID
+
+##
+# checknames
+V2probes1 <- annotepicv2[grep(probemodels[1],probenamesv2),]
+V2probes2 <- annotepicv2[grep(probemodels[2],probenamesv2),]
+V1probes1 <- annotepic[grep(probemodels[1],probenames),]
+V1probes2 <- annotepic[grep(probemodels[2],probenames),]
+
+## for probe 1: "cg12434587"
+
+V1probes1
+V2probes1
+V2probes1[is.element(V2probes1$AlleleA_ProbeSeq,V1probes1$AlleleA_ProbeSeq),]
+
+## for probe 2: "cg12981137"
+V1probes2
+V2probes2
+V2probes2[is.element(V2probes2$AlleleA_ProbeSeq,V1probes2$AlleleA_ProbeSeq),]
+
+## final selection
+V2probes1[is.element(V2probes1$AlleleA_ProbeSeq,V1probes1$AlleleA_ProbeSeq),"Probe_ID"]
+V2probes2[is.element(V2probes2$AlleleA_ProbeSeq,V1probes2$AlleleA_ProbeSeq),"Probe_ID"]
+```
+
+
 ## Depends ##
 R (>= 3.1.2), minfi, lumi, ade4,methylumi,MASS
 

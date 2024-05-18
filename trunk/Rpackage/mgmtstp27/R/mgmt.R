@@ -94,7 +94,89 @@ data(MGMTSTP27, envir=environment())
 }
 # IC => normal, see Faraway (2006)
 # update 2024
-MGMTpredict <- function (x, level = 0.05, dispersion = FALSE, transpose = FALSE,ic.distrib="normal",cutoff=1,isEpicV2=FALSE,...){
+# MGMTpredictOLD <- function (x, level = 0.05, dispersion = FALSE, transpose = FALSE,ic.distrib="normal",cutoff=1,isEpicV2=FALSE,...){
+#   if (!inherits(x, "data.frame"))
+#     stop("non convient object!")
+#   if(cutoff==1){
+#     perf <- MGMTSTP27$perf1
+#   }else if(cutoff==2){
+#     perf <- MGMTSTP27$perf2
+#   }else{
+#     stop("non convenient cut-off!")
+#   }
+#   if(isEpicv2){
+#     if (!transpose) {
+#       if (!is.element("cg12981137_TC11", colnames(x)))
+#         stop("the probe 'cg12981137_TC11' is missing!")
+#       if (!is.element("cg12434587_BC11", colnames(x)))
+#         stop("the probe 'cg12434587_BC11' is missing!")
+#       data1 <- as.data.frame(x[, c("cg12981137_TC11", "cg12434587_BC11")])
+#       
+#     }else{
+#       if (!is.element("cg12981137_TC11", rownames(x)))
+#         stop("the probe 'cg12981137_TC11' is missing!")
+#       if (!is.element("cg12434587_BC11", rownames(x)))
+#         stop("the probe 'cg12434587_BC11' is missing!")
+#       data1 <- as.data.frame(t(x[c("cg12981137_TC11", "cg12434587_BC11"),]))
+#     }    
+#   }else{
+#     if (!transpose) {
+#       if (!is.element("cg12981137", colnames(x)))
+#         stop("the probe 'cg12981137' is missing!")
+#       if (!is.element("cg12434587", colnames(x)))
+#         stop("the probe 'cg12434587' is missing!")
+#       data1 <- as.data.frame(x[, c("cg12981137", "cg12434587")])
+#     }else {
+#       if (!is.element("cg12981137", rownames(x)))
+#         stop("the probe 'cg12981137' is missing!")
+#       if (!is.element("cg12434587", rownames(x)))
+#         stop("the probe 'cg12434587' is missing!")
+#       data1 <- as.data.frame(t(x[c("cg12981137", "cg12434587"),
+#       ]))
+#     }
+#   }
+#   colnames(data1) <- c("cg12981137", "cg12434587")
+#   predmod <- predict(MGMTSTP27, newdata = data1, type = "link",
+#                      se.fit = TRUE)
+#   linkinv <- MGMTSTP27$family$linkinv
+#   df <- MGMTSTP27$df.residual
+#   pred <- predmod$fit
+#   if (dispersion) {
+#     sigma <- sum((MGMTSTP27$weights * MGMTSTP27$residuals^2)[MGMTSTP27$weights >
+#                                                                0])/df
+#   }
+#   else {
+#     sigma <- 1
+#   }
+#   sy <- predmod$se.fit * sqrt(sigma)
+#   
+#   if(ic.distrib=="student"){
+#     lower <- pred - sy * qt(1 - level/2, df = df)
+#     upper <- pred + sy * qt(1 - level/2, df = df)
+#   }else if(ic.distrib=="normal"){
+#     lower <- pred - sy * qnorm(1-level/2)
+#     upper <- pred + sy * qnorm(1-level/2)
+#   }else stop("non convenient ic.distrib!")
+#   lower <- linkinv(lower)
+#   upper <- linkinv(upper)
+#   pred <- linkinv(pred)
+#   categ <- ifelse(pred >= perf$cut, "M", "U")
+#   if (is.null(rownames(data1)))
+#     rownames(data1) <- 1:nrow(data1)
+#   
+#   res <- data.frame(sample = rownames(data1), cg12434587 = data1[,
+#                                                                  "cg12434587"], cg12981137 = data1[, "cg12981137"], pred = pred,
+#                     lower = lower, upper = upper, state = categ)
+#   
+#   vecambigous <- rownames(res)[which(res$lower <= perf$cut & res$upper >= perf$cut)]
+#   res$extended <- as.character(res[,"state"])
+#   res[vecambigous,"extended"] <- rep("intermediate",length(vecambigous))
+#   res$extended <- paste(as.character(res$state),as.character(res$extended),sep="")
+#   res$extended <- c("U","u","m","M")[match(res$extended,c("UU","Uintermediate","Mintermediate","MM"))]
+#   class(res) <- c("mgmt", class(res))
+#   return(res)
+# }
+MGMTpredict <- function (x, level = 0.05, dispersion = FALSE, transpose = FALSE,ic.distrib="normal",cutoff=1,...){
   if (!inherits(x, "data.frame"))
     stop("non convient object!")
   if(cutoff==1){
@@ -104,36 +186,25 @@ MGMTpredict <- function (x, level = 0.05, dispersion = FALSE, transpose = FALSE,
   }else{
     stop("non convenient cut-off!")
   }
-  if(isEpicv2){
-    if (!transpose) {
-      if (!is.element("cg12981137_TC11", colnames(x)))
-        stop("the probe 'cg12981137_TC11' is missing!")
-      if (!is.element("cg12434587_BC11", colnames(x)))
-        stop("the probe 'cg12434587_BC11' is missing!")
-      data1 <- as.data.frame(x[, c("cg12981137_TC11", "cg12434587_BC11")])
-      
-    }else{
-      if (!is.element("cg12981137_TC11", rownames(x)))
-        stop("the probe 'cg12981137_TC11' is missing!")
-      if (!is.element("cg12434587_BC11", rownames(x)))
-        stop("the probe 'cg12434587_BC11' is missing!")
-      data1 <- as.data.frame(t(x[c("cg12981137_TC11", "cg12434587_BC11"),]))
-    }    
+  if (!transpose) {
+      if (!any(is.element(colnames(x),c("cg12981137","cg12981137_TC11"))))
+        stop("the probe 'cg12981137' is missing!")
+      if (!any(is.element(colnames(x),c("cg12434587", "cg12434587_BC11"))))
+        stop("the probe 'cg12434587' is missing!")
+      data1 <- x
+      colnames(data1) <- ifelse(colnames(data1)=="cg12981137_TC11","cg12981137",colnames(data1))
+      colnames(data1) <- ifelse(colnames(data1)=="cg12434587_BC11","cg12434587",colnames(data1))
+      data1 <- as.data.frame(data1[, c("cg12981137", "cg12434587")])
   }else{
-    if (!transpose) {
-      if (!is.element("cg12981137", colnames(x)))
-        stop("the probe 'cg12981137' is missing!")
-      if (!is.element("cg12434587", colnames(x)))
-        stop("the probe 'cg12434587' is missing!")
-      data1 <- as.data.frame(x[, c("cg12981137", "cg12434587")])
-    }else {
-      if (!is.element("cg12981137", rownames(x)))
-        stop("the probe 'cg12981137' is missing!")
-      if (!is.element("cg12434587", rownames(x)))
-        stop("the probe 'cg12434587' is missing!")
-      data1 <- as.data.frame(t(x[c("cg12981137", "cg12434587"),
+    if (!any(is.element(rownames(x),c("cg12981137","cg12981137_TC11"))))
+      stop("the probe 'cg12981137' is missing!")
+    if (!any(is.element(rownames(x),c("cg12434587", "cg12434587_BC11"))))
+      stop("the probe 'cg12434587' is missing!")
+      data1 <- x
+      rownames(data1) <- ifelse(colnames(data1)=="cg12981137_TC11","cg12981137",rownames(data1))
+      rownames(data1) <- ifelse(colnames(data1)=="cg12434587_BC11","cg12434587",rownames(data1))
+      data1 <- as.data.frame(t(data1[c("cg12981137", "cg12434587"),
       ]))
-    }
   }
   colnames(data1) <- c("cg12981137", "cg12434587")
   predmod <- predict(MGMTSTP27, newdata = data1, type = "link",

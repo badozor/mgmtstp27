@@ -1,0 +1,23 @@
+* installing *source* package 'mgmtstp27' ...
+** using staged installation
+** R
+** data
+** byte-compile and prepare package for lazy loading
+Pas de méthodes trouvées dans le package 'RSQLite' pour la requête : 'dbListFields' lors du chargement de 'lumi'
+Avis : remplacement de l'importation précédente 'lumi::getHistory' par 'methylumi::getHistory' lors du chargement de 'mgmtstp27'
+Avis : remplacement de l'importation précédente 'lumi::estimateM' par 'methylumi::estimateM' lors du chargement de 'mgmtstp27'
+Error: le chargement du package ou de l'espace de noms a échoué pour 'mgmtstp27' in loadNamespace(package, lib.loc) :
+cyclic namespace dependency detected when loading 'mgmtstp27', already loading 'mgmtstp27'
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+Pas de méthodes trouvées dans le package 'RSQLite' pour la requête : 'dbListFields' lors du chargement de 'lumi'
+Avis : remplacement de l'importation précédente 'lumi::getHistory' par 'methylumi::getHistory' lors du chargement de 'mgmtstp27'
+Avis : remplacement de l'importation précédente 'lumi::estimateM' par 'methylumi::estimateM' lors du chargement de 'mgmtstp27'
+** testing if installed package can be loaded from final location
+Pas de méthodes trouvées dans le package 'RSQLite' pour la requête : 'dbListFields' lors du chargement de 'lumi'
+Avis : remplacement de l'importation précédente 'lumi::getHistory' par 'methylumi::getHistory' lors du chargement de 'mgmtstp27'
+Avis : remplacement de l'importation précédente 'lumi::estimateM' par 'methylumi::estimateM' lors du chargement de 'mgmtstp27'
+** testing if installed package keeps a record of temporary installation path
+* DONE (mgmtstp27)
