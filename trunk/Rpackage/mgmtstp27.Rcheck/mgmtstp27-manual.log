@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.7) (preloaded format=pdflatex 2022.7.22)  18 MAY 2024 22:57
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.7) (preloaded format=pdflatex 2022.7.22)  21 MAY 2024 09:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**C:/Users/pbady/AppData/Local/Temp/RtmpgdIavQ/Rd2pdf351816dd6f16/Rd2.tex
-(C:/Users/pbady/AppData/Local/Temp/RtmpgdIavQ/Rd2pdf351816dd6f16/Rd2.tex
+**C:/Users/pbady/AppData/Local/Temp/RtmpSECBc4/Rd2pdf362877bf453/Rd2.tex
+(C:/Users/pbady/AppData/Local/Temp/RtmpSECBc4/Rd2pdf362877bf453/Rd2.tex
 LaTeX2e <2022-06-01> patch level 5
 L3 programming layer <2022-07-04>
 (C:\Programs\MiKTeX\tex/latex/base\book.cls
@@ -483,19 +483,19 @@ Package rerunfilecheck Info: File `Rd2.out' has not changed.
  ) 
 Here is how much of TeX's memory you used:
  10336 strings out of 478419
- 157109 string characters out of 2851417
+ 157098 string characters out of 2851417
  455051 words of memory out of 3000000
  28455 multiletter control sequences out of 15000+600000
  502812 words of font info for 70 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 89i,5n,93p,590b,726s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 89i,5n,93p,589b,726s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {C:/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}{C:/Programs/MiKTeX/fonts/enc
 /dvips/inconsolata/i4-t1-0.enc}<C:/Programs/MiKTeX/fonts/type1/public/inconsola
 ta/Inconsolata-zi4r.pfb><C:/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy
 10.pfb><C:/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Programs/MiKTeX
 /fonts/type1/urw/times/utmr8a.pfb><C:/Programs/MiKTeX/fonts/type1/urw/times/utm
 r8a.pfb><C:/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Rd2.pdf (7 pages, 111527 bytes).
+Output written on Rd2.pdf (7 pages, 111526 bytes).
 PDF statistics:
  159 PDF objects out of 1000 (max. 8388607)
  53 named destinations out of 1000 (max. 500000)

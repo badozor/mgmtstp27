@@ -1,8 +1,8 @@
 ## Title ##
-Prediction of DNA methylation state of MGMT promoter based on infinium platforms (27K, 450K and EPIC)
+Prediction of DNA methylation state of MGMT promoter based on infinium platforms (27K, 450K, EPIC and EPICv2)
 
 ## Description ##
-This R package contains function to compute the prediction of the DNA methylation of MGMT promoter with data from infinium EPIC, HM-450K and HM-27K platforms
+This R package contains function to compute the prediction of the DNA methylation of MGMT promoter with data from infinium EPIC, EPIC version 2, HM-450K and HM-27K platforms
 
 ## License ##
 GPL version 2 or newer
@@ -33,13 +33,14 @@ The sources are avalaible [here](https://github.com/badozor/mgmtstp27/tree/maste
 
 The installation of the package mgmtstp27 requires the presence (or installation) of the following additional packages:
 ```
-## CRAN
+## CRAN (updated 21/05/2024)
 install.packages(c("ade4","MASS"))
 
 ## Bioconductor (https://www.bioconductor.org/install/)
 ## try http:// if https:// URLs are not supported
-source("https://bioconductor.org/biocLite.R")
-biocLite(c("lumi","methylumi","minfi"))
+if (!require("BiocManager", quietly = TRUE))
+  install.packages("BiocManager")
+BiocManager::install(c("lumi","methylumi","minfi"))
 ```
 
 
@@ -142,6 +143,8 @@ boot
 0.6-3 (version for R-3.2.2)
 
 0.7 (version for R-4.2.1)
+
+0.8 (version for R-4.4.0)
 
 ## URL ##
   * http://lausanne.isb-sib.ch/~pbady/Rpackages.html

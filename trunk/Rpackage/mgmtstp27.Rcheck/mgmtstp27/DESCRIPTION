@@ -10,4 +10,4 @@ Depends: R (>= 4.2.1), minfi, lumi, ade4,methylumi,MASS
 Suggests: boot
 Description: This package contains R functions for the prediction of the DNA methylation status of MGMT promoter with data from Infinium platforms (HM-27K, HM450K, EPIC and EPICv2).
 License: GPL (>= 2)
-Built: R 4.4.0; ; 2024-05-18 20:53:18 UTC; windows
+Built: R 4.4.0; ; 2024-05-21 07:33:39 UTC; windows

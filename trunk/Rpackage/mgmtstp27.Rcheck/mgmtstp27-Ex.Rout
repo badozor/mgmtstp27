@@ -296,7 +296,7 @@ TCGA-02-0021        TCGA-02-0021     0.7546829          M  -2.962724 -1.7660180
 > cleanEx()
 > options(digits = 7L)
 > base::cat("Time elapsed: ", proc.time() - base::get("ptime", pos = 'CheckExEnv'),"\n")
-Time elapsed:  9.79 0.69 10.67 NA NA 
+Time elapsed:  21.74 1.76 24 NA NA 
 > grDevices::dev.off()
 null device 
           1 
