@@ -173,8 +173,8 @@ PMC5522120.
 
   * Urbschat S, Sippl C, Engelhardt J, Kammers K, Oertel J, Ketter R. Importance
 of biomarkers in glioblastomas patients receiving local BCNU wafer chemotherapy. 
-Mol Cytogenet. 2017 May 4;10:16. doi: 10.1186/s13039-017-0317-5. eCollection
-2017. PubMed PMID: 28484518; PubMed Central PMCID: PMC5418867.
+Mol Cytogenet. 2017 May 4;10:16. doi: 10.1186/s13039-017-0317-5. eCollection 2017. 
+PubMed PMID: 28484518; PubMed Central PMCID: PMC5418867.
 
 
   * Tanguturi SK, Trippa L, Ramkissoon SH, Pelton K, Knoff D, Sandak D, Lindeman
