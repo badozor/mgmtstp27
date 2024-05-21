@@ -201,8 +201,8 @@ MGMTpredict <- function (x, level = 0.05, dispersion = FALSE, transpose = FALSE,
     if (!any(is.element(rownames(x),c("cg12434587", "cg12434587_BC11"))))
       stop("the probe 'cg12434587' is missing!")
       data1 <- x
-      rownames(data1) <- ifelse(colnames(data1)=="cg12981137_TC11","cg12981137",rownames(data1))
-      rownames(data1) <- ifelse(colnames(data1)=="cg12434587_BC11","cg12434587",rownames(data1))
+      rownames(data1) <- ifelse(rownames(data1)=="cg12981137_TC11","cg12981137",rownames(data1))
+      rownames(data1) <- ifelse(rownames(data1)=="cg12434587_BC11","cg12434587",rownames(data1))
       data1 <- as.data.frame(t(data1[c("cg12981137", "cg12434587"),
       ]))
   }
