@@ -220,8 +220,8 @@ PubMed Central PMCID: PMC5489374.
   * Aiello KA, Alter O. Platform-Independent Genome-Wide Pattern of DNA
 Copy-Number Alterations Predicting Astrocytoma Survival and Response to Treatment
 Revealed by the GSVD Formulated as a Comparative Spectral Decomposition. PLoS
-One. 2016 Oct 31;11(10):e0164546. doi: 10.1371/journal.pone.0164546. eCollection 
-2016. PubMed PMID: 27798635; PubMed Central PMCID: PMC5087864.
+One. 2016 Oct 31;11(10):e0164546. doi: 10.1371/journal.pone.0164546. eCollection 2016.
+PubMed PMID: 27798635; PubMed Central PMCID: PMC5087864.
 
 
   * Baumert BG, Hegi ME, van den Bent MJ, von Deimling A, Gorlia T, Hoang-Xuan K, 
@@ -305,8 +305,8 @@ Central PMCID: PMC4542181.
   * Holmes JA, Paulsson AK, Page BR, Miller LD, Liu W, Xu J, Hinson WH, Lesser
 GJ, Laxton AW, Tatter SB, Debinski W, Chan MD. Genomic predictors of patterns of 
 progression in glioblastoma and possible influences on radiation field design. J 
-Neurooncol. 2015 Sep;124(3):447-53. doi: 10.1007/s11060-015-1858-2. Epub 2015 Jul
-18. PubMed PMID: 26186902; PubMed Central PMCID: PMC4584190.
+Neurooncol. 2015 Sep;124(3):447-53. doi: 10.1007/s11060-015-1858-2. Epub 2015 Jul 18. 
+PubMed PMID: 26186902; PubMed Central PMCID: PMC4584190.
 
 
   * Vigneswaran K, Neill S, Hadjipanayis CG. Beyond the World Health Organization
@@ -422,8 +422,8 @@ SH, Vandertop WP, Noske DP, Kaspers GJ, Wesseling P, Wurdinger T. EFEMP1 induces
   * Quillien V, Lavenu A, Sanson M, Legrain M, Dubus P, Karayan-Tapon L, Mosser
 J, Ichimura K, Figarella-Branger D. Outcome-based determination of optimal
 pyrosequencing assay for MGMT methylation detection in glioblastoma patients. J
-Neurooncol. 2014 Feb;116(3):487-96. doi: 10.1007/s11060-013-1332-y. Epub 2014 Jan
-14. PubMed PMID: 24420923; PubMed Central PMCID: PMC3905192.
+Neurooncol. 2014 Feb;116(3):487-96. doi: 10.1007/s11060-013-1332-y. Epub 2014 Jan 14. 
+PubMed PMID: 24420923; PubMed Central PMCID: PMC3905192.
 
 
   * Oberstadt MC, Bien-Möller S, Weitmann K, Herzog S, Hentschel K, Rimmbach C,
@@ -437,8 +437,8 @@ PMID: 24380367; PubMed Central PMCID: PMC3890604.
  * Xu M, Nekhayeva I, Cross CE, Rondelli CM, Wickliffe JK, Abdel-Rahman SZ.
 Influence of promoter/enhancer region haplotypes on MGMT transcriptional
 regulation: a potential biomarker for human sensitivity to alkylating agents.
-Carcinogenesis. 2014 Mar;35(3):564-71. doi: 10.1093/carcin/bgt355. Epub 2013 Oct 
-25. PubMed PMID: 24163400; PubMed Central PMCID: PMC3941746.
+Carcinogenesis. 2014 Mar;35(3):564-71. doi: 10.1093/carcin/bgt355. Epub 2013 Oct 25. 
+PubMed PMID: 24163400; PubMed Central PMCID: PMC3941746.
 
 
  * Brennan CW, Verhaak RG, McKenna A, Campos B, Noushmehr H, Salama SR, Zheng S,
