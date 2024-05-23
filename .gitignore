@@ -3,4 +3,5 @@
 *.RData
 *.Rhistory
 *.bat
+*.gitignore
 

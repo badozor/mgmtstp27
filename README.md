@@ -67,6 +67,8 @@ Additional documentations are avaialble [here](https://github.com/badozor/mgmtst
   * Introduction to R package mgmtstp27 (version 0.1, in preparation, intromgmtstp27.pdf)
   * Effect of normalization on the prediction of DNA methylation status of MGMT promoter: example with HM-450K Infinium data from TCGA and the R package mgmtstp27 (version 0.1, in preparation, docmgmtstp27.pdf)
   * Prediction of the DNA methylation of MGMT with raw data (format IDAT) from HM-27k (version 0.1, in preparation, MgmtPredTCGA.pdf)
+  * Prediction of the DNA methylation of the MGMT promoter with EPICv2 in using the model mgmtstp27 (EPICv2mgmt.pdf)
+
 
 
 ## Note for EPIC v2 infinium platform (update 18/05/2024)
