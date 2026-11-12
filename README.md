@@ -1,7 +1,6 @@
-<img src="logo/mgmtstp27_hex.png" align="right" width="130" alt="mgmtstp27 logo"/>
-
-## R package mgmtstp27 ##
+# R package mgmtstp27
 Prediction of DNA methylation state of MGMT promoter based on infinium platforms (27K, 450K, EPIC and EPICv2)
+<img src="logo/mgmtstp27_hex.png" align="right" width="130" alt="mgmtstp27 logo"/>
 
 ## Description ##
 This R package contains function to compute the prediction of the DNA methylation of MGMT promoter with data from infinium EPIC, EPIC version 2, HM-450K and HM-27K platforms
