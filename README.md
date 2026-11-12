@@ -1,6 +1,6 @@
 <img src="logo/mgmtstp27_hex.png" align="right" width="130" alt="mgmtstp27 logo"/>
 
-## Title ##
+## R package mgmtstp27 ##
 Prediction of DNA methylation state of MGMT promoter based on infinium platforms (27K, 450K, EPIC and EPICv2)
 
 ## Description ##
