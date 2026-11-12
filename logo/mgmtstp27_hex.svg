@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="600" viewBox="0 0 520 600">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#4a3f8f"/>
+      <stop offset="1" stop-color="#241d52"/>
+    </linearGradient>
+  </defs>
+  <polygon points="260,20 502.5,160 502.5,440 260,580 17.5,440 17.5,160" fill="#8DC63F"/>
+  <polygon points="260,38 486.9,169 486.9,431 260,562 33.1,431 33.1,169" fill="url(#bg)"/>
+
+  <!-- brin d'ADN et CpG : vides = non méthylés, pleins = méthylés -->
+  <line x1="100" y1="178" x2="420" y2="178" stroke="#ffffff" stroke-width="5" stroke-linecap="round"/>
+  <line x1="130" y1="178" x2="130" y2="146" stroke="#ffffff" stroke-width="4"/><circle cx="130" cy="134" r="13" fill="#ffffff" stroke="#ffffff" stroke-width="4"/><line x1="178" y1="178" x2="178" y2="146" stroke="#ffffff" stroke-width="4"/><circle cx="178" cy="134" r="13" fill="#ffffff" stroke="#ffffff" stroke-width="4"/><line x1="226" y1="178" x2="226" y2="146" stroke="#ffffff" stroke-width="4"/><circle cx="226" cy="134" r="13" fill="#ffffff" stroke="#ffffff" stroke-width="4"/><line x1="274" y1="178" x2="274" y2="146" stroke="#ffffff" stroke-width="4"/><circle cx="274" cy="134" r="13" fill="#8DC63F" stroke="#8DC63F" stroke-width="4"/><line x1="322" y1="178" x2="322" y2="146" stroke="#ffffff" stroke-width="4"/><circle cx="322" cy="134" r="13" fill="#8DC63F" stroke="#8DC63F" stroke-width="4"/><line x1="370" y1="178" x2="370" y2="146" stroke="#ffffff" stroke-width="4"/><circle cx="370" cy="134" r="13" fill="#8DC63F" stroke="#8DC63F" stroke-width="4"/>
+
+  <g transform="translate(0,-14)">
+  <!-- modèle logistique : axes, seuil, courbe, échantillons -->
+  <g stroke="#ffffff" stroke-opacity="0.6" stroke-width="2.5">
+    <line x1="105" y1="395" x2="415" y2="395"/>
+    <line x1="105" y1="395" x2="105" y2="225"/>
+  </g>
+  <g stroke="#ffffff" stroke-opacity="0.5" stroke-width="2" stroke-dasharray="6 6">
+    <line x1="105" y1="310" x2="415" y2="310"/>
+    <line x1="260" y1="395" x2="260" y2="225"/>
+  </g>
+  <path d="M110,384.5 L115,384.4 L120,384.3 L125,384.2 L130,384.0 L135,383.8 L140,383.5 L145,383.2 L150,382.9 L155,382.4 L160,381.9 L165,381.2 L170,380.4 L175,379.5 L180,378.4 L185,377.1 L190,375.5 L195,373.6 L200,371.4 L205,368.9 L210,365.9 L215,362.4 L220,358.5 L225,354.0 L230,349.0 L235,343.5 L240,337.5 L245,331.1 L250,324.2 L255,317.2 L260,310.0 L265,302.8 L270,295.8 L275,288.9 L280,282.5 L285,276.5 L290,271.0 L295,266.0 L300,261.5 L305,257.6 L310,254.1 L315,251.1 L320,248.6 L325,246.4 L330,244.5 L335,242.9 L340,241.6 L345,240.5 L350,239.6 L355,238.8 L360,238.1 L365,237.6 L370,237.1 L375,236.8 L380,236.5 L385,236.2 L390,236.0 L395,235.8 L400,235.7 L405,235.6 L410,235.5" fill="none" stroke="#8DC63F" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="125" cy="380" r="7" fill="#ffffff" opacity="0.9"/><circle cx="150" cy="372" r="7" fill="#ffffff" opacity="0.9"/><circle cx="175" cy="383" r="7" fill="#ffffff" opacity="0.9"/><circle cx="200" cy="368" r="7" fill="#ffffff" opacity="0.9"/><circle cx="222" cy="376" r="7" fill="#ffffff" opacity="0.9"/><circle cx="238" cy="350" r="7" fill="#ffffff" opacity="0.9"/><circle cx="282" cy="262" r="7" fill="#8DC63F" opacity="0.9"/><circle cx="300" cy="252" r="7" fill="#8DC63F" opacity="0.9"/><circle cx="325" cy="238" r="7" fill="#8DC63F" opacity="0.9"/><circle cx="350" cy="246" r="7" fill="#8DC63F" opacity="0.9"/><circle cx="375" cy="232" r="7" fill="#8DC63F" opacity="0.9"/><circle cx="398" cy="241" r="7" fill="#8DC63F" opacity="0.9"/>
+
+  </g>
+  <text x="260" y="452" font-family="DejaVu Sans Mono" font-weight="bold" font-size="56" fill="#ffffff" text-anchor="middle"><tspan fill="#8DC63F">mgmt</tspan>stp27</text>
+  <text x="260" y="484" font-family="DejaVu Sans" font-size="15" fill="#8DC63F" text-anchor="middle" letter-spacing="1.5">MGMT promoter methylation</text>
+</svg>
