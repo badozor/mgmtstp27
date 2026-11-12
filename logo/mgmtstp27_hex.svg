@@ -1,8 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="520" height="600" viewBox="0 0 520 600">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#4a3f8f"/>
-      <stop offset="1" stop-color="#241d52"/>
+      <stop offset="0" stop-color="#2f6db3"/>
+      <stop offset="1" stop-color="#16325c"/>
     </linearGradient>
   </defs>
   <polygon points="260,20 502.5,160 502.5,440 260,580 17.5,440 17.5,160" fill="#8DC63F"/>
